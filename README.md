@@ -29,3 +29,18 @@ a little game
 >  1、鬼可以提前自爆，猜测平民词语，猜到即可胜利
 >  
 >  2、每一轮被投出去的玩家，如果是鬼，可以直接猜，或者问一个是非题(给同伙提供信息)，其他角色没有遗言！
+
+### 游戏安装方法
+> 1、安装xcode
+> 
+> 2、注册账户（apple id）
+> 
+> 3、sudo gem install cocoapods
+> 
+> 4、到项目根目录 
+> 
+> 5、执行 pod install 之后是否有Podfile文件
+> 
+> 6、双击CatchGhost.xcworkspace，用xcode打开
+>
+> 7、手机连接电脑，点击xcode左上角的"三角形"安装，如果没有账号，登录自己的apple id账号（体验7天），开发者账号可以永久使用
