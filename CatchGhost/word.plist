@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>葫芦娃</string>
+		<string>黑猫警长</string>
+	</array>
+	<array>
+		<string>孙悟空</string>
+		<string>牛魔王</string>
+	</array>
+	<array>
+		<string>水浒传</string>
+		<string>宋江</string>
+	</array>
+	<array>
+		<string>aaa</string>
+		<string>bbb</string>
+	</array>
+	<array>
+		<string>aaa</string>
+		<string>bbb</string>
+	</array>
+</array>
+</plist>

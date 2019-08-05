@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042459812003362F00290D3D /* word.plist in Resources */ = {isa = PBXBuildFile; fileRef = 042459802003362F00290D3D /* word.plist */; };
+		04EE999A200377B200B238D5 /* CAEmitterLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE9996200377B200B238D5 /* CAEmitterLayerView.m */; };
+		04EE999B200377B200B238D5 /* demoHitEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE9999200377B200B238D5 /* demoHitEventView.m */; };
+		831503251FBD637500CA5727 /* EndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831503241FBD637500CA5727 /* EndViewController.m */; };
+		839767B21F8CE037007D69A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 839767B11F8CE037007D69A1 /* AppDelegate.m */; };
+		839767B51F8CE037007D69A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839767B41F8CE037007D69A1 /* ViewController.m */; };
+		839767B81F8CE037007D69A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839767B61F8CE037007D69A1 /* Main.storyboard */; };
+		839767BA1F8CE037007D69A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839767B91F8CE037007D69A1 /* Assets.xcassets */; };
+		839767BD1F8CE037007D69A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839767BB1F8CE037007D69A1 /* LaunchScreen.storyboard */; };
+		839767C01F8CE037007D69A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 839767BF1F8CE037007D69A1 /* main.m */; };
+		839767CA1F8CE037007D69A1 /* CatchGhostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839767C91F8CE037007D69A1 /* CatchGhostTests.m */; };
+		839767D51F8CE037007D69A1 /* CatchGhostUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839767D41F8CE037007D69A1 /* CatchGhostUITests.m */; };
+		C5D00F65A337A0AE8BA40D0D /* libPods-CatchGhost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBA25C1173E8D57D322D9FC /* libPods-CatchGhost.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		839767C61F8CE037007D69A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839767A51F8CE037007D69A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839767AC1F8CE037007D69A1;
+			remoteInfo = CatchGhost;
+		};
+		839767D11F8CE037007D69A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839767A51F8CE037007D69A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839767AC1F8CE037007D69A1;
+			remoteInfo = CatchGhost;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042459802003362F00290D3D /* word.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = word.plist; sourceTree = "<group>"; };
+		04EE9996200377B200B238D5 /* CAEmitterLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerView.m; sourceTree = "<group>"; };
+		04EE9997200377B200B238D5 /* demoHitEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demoHitEventView.h; sourceTree = "<group>"; };
+		04EE9998200377B200B238D5 /* CAEmitterLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerView.h; sourceTree = "<group>"; };
+		04EE9999200377B200B238D5 /* demoHitEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demoHitEventView.m; sourceTree = "<group>"; };
+		2094CE9500D7C8B0999F5029 /* Pods-CatchGhost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchGhost.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatchGhost/Pods-CatchGhost.debug.xcconfig"; sourceTree = "<group>"; };
+		831503231FBD637500CA5727 /* EndViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndViewController.h; sourceTree = "<group>"; };
+		831503241FBD637500CA5727 /* EndViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndViewController.m; sourceTree = "<group>"; };
+		839767AD1F8CE037007D69A1 /* CatchGhost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchGhost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		839767B01F8CE037007D69A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		839767B11F8CE037007D69A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		839767B31F8CE037007D69A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		839767B41F8CE037007D69A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		839767B71F8CE037007D69A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		839767B91F8CE037007D69A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		839767BC1F8CE037007D69A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		839767BE1F8CE037007D69A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839767BF1F8CE037007D69A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		839767C51F8CE037007D69A1 /* CatchGhostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchGhostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		839767C91F8CE037007D69A1 /* CatchGhostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchGhostTests.m; sourceTree = "<group>"; };
+		839767CB1F8CE037007D69A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839767D01F8CE037007D69A1 /* CatchGhostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchGhostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		839767D41F8CE037007D69A1 /* CatchGhostUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchGhostUITests.m; sourceTree = "<group>"; };
+		839767D61F8CE037007D69A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCBA25C1173E8D57D322D9FC /* libPods-CatchGhost.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CatchGhost.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23748DAD0598580AFFFFD65 /* Pods-CatchGhost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchGhost.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatchGhost/Pods-CatchGhost.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		839767AA1F8CE037007D69A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D00F65A337A0AE8BA40D0D /* libPods-CatchGhost.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839767C21F8CE037007D69A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839767CD1F8CE037007D69A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EE9995200377B200B238D5 /* snow */ = {
+			isa = PBXGroup;
+			children = (
+				04EE9998200377B200B238D5 /* CAEmitterLayerView.h */,
+				04EE9996200377B200B238D5 /* CAEmitterLayerView.m */,
+				04EE9997200377B200B238D5 /* demoHitEventView.h */,
+				04EE9999200377B200B238D5 /* demoHitEventView.m */,
+			);
+			path = snow;
+			sourceTree = "<group>";
+		};
+		839767A41F8CE037007D69A1 = {
+			isa = PBXGroup;
+			children = (
+				839767AF1F8CE037007D69A1 /* CatchGhost */,
+				839767C81F8CE037007D69A1 /* CatchGhostTests */,
+				839767D31F8CE037007D69A1 /* CatchGhostUITests */,
+				839767AE1F8CE037007D69A1 /* Products */,
+				F318A0D28396F2C1767CDCBF /* Pods */,
+				F710CADF6C70DFD2F85D1D17 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		839767AE1F8CE037007D69A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				839767AD1F8CE037007D69A1 /* CatchGhost.app */,
+				839767C51F8CE037007D69A1 /* CatchGhostTests.xctest */,
+				839767D01F8CE037007D69A1 /* CatchGhostUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		839767AF1F8CE037007D69A1 /* CatchGhost */ = {
+			isa = PBXGroup;
+			children = (
+				839767B01F8CE037007D69A1 /* AppDelegate.h */,
+				839767B11F8CE037007D69A1 /* AppDelegate.m */,
+				839767B31F8CE037007D69A1 /* ViewController.h */,
+				839767B41F8CE037007D69A1 /* ViewController.m */,
+				839767B61F8CE037007D69A1 /* Main.storyboard */,
+				839767B91F8CE037007D69A1 /* Assets.xcassets */,
+				839767BB1F8CE037007D69A1 /* LaunchScreen.storyboard */,
+				839767BE1F8CE037007D69A1 /* Info.plist */,
+				042459802003362F00290D3D /* word.plist */,
+				839767BF1F8CE037007D69A1 /* main.m */,
+				831503231FBD637500CA5727 /* EndViewController.h */,
+				831503241FBD637500CA5727 /* EndViewController.m */,
+				04EE9995200377B200B238D5 /* snow */,
+			);
+			path = CatchGhost;
+			sourceTree = "<group>";
+		};
+		839767C81F8CE037007D69A1 /* CatchGhostTests */ = {
+			isa = PBXGroup;
+			children = (
+				839767C91F8CE037007D69A1 /* CatchGhostTests.m */,
+				839767CB1F8CE037007D69A1 /* Info.plist */,
+			);
+			path = CatchGhostTests;
+			sourceTree = "<group>";
+		};
+		839767D31F8CE037007D69A1 /* CatchGhostUITests */ = {
+			isa = PBXGroup;
+			children = (
+				839767D41F8CE037007D69A1 /* CatchGhostUITests.m */,
+				839767D61F8CE037007D69A1 /* Info.plist */,
+			);
+			path = CatchGhostUITests;
+			sourceTree = "<group>";
+		};
+		F318A0D28396F2C1767CDCBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2094CE9500D7C8B0999F5029 /* Pods-CatchGhost.debug.xcconfig */,
+				F23748DAD0598580AFFFFD65 /* Pods-CatchGhost.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F710CADF6C70DFD2F85D1D17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCBA25C1173E8D57D322D9FC /* libPods-CatchGhost.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		839767AC1F8CE037007D69A1 /* CatchGhost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839767D91F8CE037007D69A1 /* Build configuration list for PBXNativeTarget "CatchGhost" */;
+			buildPhases = (
+				1D2A66F750F2112515E66E0B /* [CP] Check Pods Manifest.lock */,
+				839767A91F8CE037007D69A1 /* Sources */,
+				839767AA1F8CE037007D69A1 /* Frameworks */,
+				839767AB1F8CE037007D69A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatchGhost;
+			productName = CatchGhost;
+			productReference = 839767AD1F8CE037007D69A1 /* CatchGhost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		839767C41F8CE037007D69A1 /* CatchGhostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839767DC1F8CE037007D69A1 /* Build configuration list for PBXNativeTarget "CatchGhostTests" */;
+			buildPhases = (
+				839767C11F8CE037007D69A1 /* Sources */,
+				839767C21F8CE037007D69A1 /* Frameworks */,
+				839767C31F8CE037007D69A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				839767C71F8CE037007D69A1 /* PBXTargetDependency */,
+			);
+			name = CatchGhostTests;
+			productName = CatchGhostTests;
+			productReference = 839767C51F8CE037007D69A1 /* CatchGhostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		839767CF1F8CE037007D69A1 /* CatchGhostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839767DF1F8CE037007D69A1 /* Build configuration list for PBXNativeTarget "CatchGhostUITests" */;
+			buildPhases = (
+				839767CC1F8CE037007D69A1 /* Sources */,
+				839767CD1F8CE037007D69A1 /* Frameworks */,
+				839767CE1F8CE037007D69A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				839767D21F8CE037007D69A1 /* PBXTargetDependency */,
+			);
+			name = CatchGhostUITests;
+			productName = CatchGhostUITests;
+			productReference = 839767D01F8CE037007D69A1 /* CatchGhostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		839767A51F8CE037007D69A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = yiner;
+				TargetAttributes = {
+					839767AC1F8CE037007D69A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					839767C41F8CE037007D69A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 839767AC1F8CE037007D69A1;
+					};
+					839767CF1F8CE037007D69A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 839767AC1F8CE037007D69A1;
+					};
+				};
+			};
+			buildConfigurationList = 839767A81F8CE037007D69A1 /* Build configuration list for PBXProject "CatchGhost" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 839767A41F8CE037007D69A1;
+			productRefGroup = 839767AE1F8CE037007D69A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				839767AC1F8CE037007D69A1 /* CatchGhost */,
+				839767C41F8CE037007D69A1 /* CatchGhostTests */,
+				839767CF1F8CE037007D69A1 /* CatchGhostUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		839767AB1F8CE037007D69A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042459812003362F00290D3D /* word.plist in Resources */,
+				839767BD1F8CE037007D69A1 /* LaunchScreen.storyboard in Resources */,
+				839767BA1F8CE037007D69A1 /* Assets.xcassets in Resources */,
+				839767B81F8CE037007D69A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839767C31F8CE037007D69A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839767CE1F8CE037007D69A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D2A66F750F2112515E66E0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatchGhost-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		839767A91F8CE037007D69A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831503251FBD637500CA5727 /* EndViewController.m in Sources */,
+				04EE999A200377B200B238D5 /* CAEmitterLayerView.m in Sources */,
+				04EE999B200377B200B238D5 /* demoHitEventView.m in Sources */,
+				839767B51F8CE037007D69A1 /* ViewController.m in Sources */,
+				839767C01F8CE037007D69A1 /* main.m in Sources */,
+				839767B21F8CE037007D69A1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839767C11F8CE037007D69A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839767CA1F8CE037007D69A1 /* CatchGhostTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839767CC1F8CE037007D69A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839767D51F8CE037007D69A1 /* CatchGhostUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		839767C71F8CE037007D69A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839767AC1F8CE037007D69A1 /* CatchGhost */;
+			targetProxy = 839767C61F8CE037007D69A1 /* PBXContainerItemProxy */;
+		};
+		839767D21F8CE037007D69A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839767AC1F8CE037007D69A1 /* CatchGhost */;
+			targetProxy = 839767D11F8CE037007D69A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		839767B61F8CE037007D69A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839767B71F8CE037007D69A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		839767BB1F8CE037007D69A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839767BC1F8CE037007D69A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		839767D71F8CE037007D69A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		839767D81F8CE037007D69A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		839767DA1F8CE037007D69A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2094CE9500D7C8B0999F5029 /* Pods-CatchGhost.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3B479DAUK;
+				INFOPLIST_FILE = CatchGhost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "catchGhost-shijia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		839767DB1F8CE037007D69A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23748DAD0598580AFFFFD65 /* Pods-CatchGhost.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3B479DAUK;
+				INFOPLIST_FILE = CatchGhost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "catchGhost-shijia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		839767DD1F8CE037007D69A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRQB3E5X27;
+				INFOPLIST_FILE = CatchGhostTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = W.CatchGhostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchGhost.app/CatchGhost";
+			};
+			name = Debug;
+		};
+		839767DE1F8CE037007D69A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRQB3E5X27;
+				INFOPLIST_FILE = CatchGhostTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = W.CatchGhostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchGhost.app/CatchGhost";
+			};
+			name = Release;
+		};
+		839767E01F8CE037007D69A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRQB3E5X27;
+				INFOPLIST_FILE = CatchGhostUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = W.CatchGhostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatchGhost;
+			};
+			name = Debug;
+		};
+		839767E11F8CE037007D69A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRQB3E5X27;
+				INFOPLIST_FILE = CatchGhostUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = W.CatchGhostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatchGhost;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		839767A81F8CE037007D69A1 /* Build configuration list for PBXProject "CatchGhost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839767D71F8CE037007D69A1 /* Debug */,
+				839767D81F8CE037007D69A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839767D91F8CE037007D69A1 /* Build configuration list for PBXNativeTarget "CatchGhost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839767DA1F8CE037007D69A1 /* Debug */,
+				839767DB1F8CE037007D69A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839767DC1F8CE037007D69A1 /* Build configuration list for PBXNativeTarget "CatchGhostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839767DD1F8CE037007D69A1 /* Debug */,
+				839767DE1F8CE037007D69A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839767DF1F8CE037007D69A1 /* Build configuration list for PBXNativeTarget "CatchGhostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839767E01F8CE037007D69A1 /* Debug */,
+				839767E11F8CE037007D69A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 839767A51F8CE037007D69A1 /* Project object */;
+}
