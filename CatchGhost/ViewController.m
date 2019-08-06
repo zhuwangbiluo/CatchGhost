@@ -74,9 +74,9 @@ typedef enum: NSUInteger {
     } else {
         self.navigationItem.title = @"捉👻（多鬼模式）";
     }
-//    self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
+    //    self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
-    
+
     // Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview:self.bgview];
     [self.view addSubview:self.peopleButton];
@@ -115,88 +115,88 @@ typedef enum: NSUInteger {
 }
 
 -(void)navigation{
-//    UIButton *button = [[UIButton alloc] init];
-//    button.frame = CGRectMake(0, 0, 60, 40);
-//    button.titleLabel.font = [UIFont systemFontOfSize:15];
-//    [button setTitle:@"   自动上帝" forState:UIControlStateNormal];
-//    [button setTitleColor:[UIColor blackColor] forState:0];
-//    [button addTarget:self action:@selector(autoGod) forControlEvents:UIControlEventTouchUpInside];
-//    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:button];
-//    self.navigationItem.rightBarButtonItem = item;
-//    
-//    UIButton *button2 = [[UIButton alloc] init];
-//    button2.frame = CGRectMake(0, 0, 60, 40);
-//    button2.titleLabel.font = [UIFont systemFontOfSize:15];
-//    [button2 setTitle:@"手动上帝   " forState:UIControlStateNormal];
-//    [button2 setTitleColor:[UIColor blackColor] forState:0];
-//    [button2 addTarget:self action:@selector(manualGod) forControlEvents:UIControlEventTouchUpInside];
-//    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithCustomView:button2];
-//    self.navigationItem.leftBarButtonItem = item2;
+    //    UIButton *button = [[UIButton alloc] init];
+    //    button.frame = CGRectMake(0, 0, 60, 40);
+    //    button.titleLabel.font = [UIFont systemFontOfSize:15];
+    //    [button setTitle:@"   自动上帝" forState:UIControlStateNormal];
+    //    [button setTitleColor:[UIColor blackColor] forState:0];
+    //    [button addTarget:self action:@selector(autoGod) forControlEvents:UIControlEventTouchUpInside];
+    //    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:button];
+    //    self.navigationItem.rightBarButtonItem = item;
+    //
+    //    UIButton *button2 = [[UIButton alloc] init];
+    //    button2.frame = CGRectMake(0, 0, 60, 40);
+    //    button2.titleLabel.font = [UIFont systemFontOfSize:15];
+    //    [button2 setTitle:@"手动上帝   " forState:UIControlStateNormal];
+    //    [button2 setTitleColor:[UIColor blackColor] forState:0];
+    //    [button2 addTarget:self action:@selector(manualGod) forControlEvents:UIControlEventTouchUpInside];
+    //    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithCustomView:button2];
+    //    self.navigationItem.leftBarButtonItem = item2;
 }
 
 - (void)configureUI{
-    
+
     [self.pingminLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).offset(40);
         make.centerY.equalTo(self.view).offset(-50);
     }];
-    
+
     [self.peopleNumLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.pingminLab.mas_top).offset(-30);
         make.centerX.equalTo(self.pingminLab);
     }];
-    
+
     [self.shaziLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.pingminLab);
         make.top.equalTo(self.pingminLab.mas_bottom).offset(30);
     }];
-    
+
     [self.pingminTxt mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.pingminLab.mas_right).offset(20);
         make.centerY.equalTo(self.pingminLab);
         make.width.mas_equalTo(150);
     }];
-    
+
     [self.shaziTxt mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.shaziLab.mas_right).offset(20);
         make.centerY.equalTo(self.shaziLab);
         make.width.mas_equalTo(150);
     }];
-    
+
     [self.exchangeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.pingminTxt.mas_right).offset(10);
         make.top.equalTo(self.pingminTxt);
         make.bottom.equalTo(self.shaziTxt);
         make.width.mas_equalTo(25);
     }];
-    
+
     [self.pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.view);
     }];
-    
+
     [self.peopleButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.peopleNumLab.mas_right).offset(20);
         make.centerY.equalTo(self.peopleNumLab);
         make.width.mas_equalTo(88);
     }];
-    
+
     [self.randomButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.peopleNumLab.mas_top).offset(-20);
         make.centerX.equalTo(self.view);
     }];
 
-    
+
     [self.submitButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.shaziLab.mas_bottom).offset(50);
         make.left.equalTo(self.view).offset(40);
         make.right.equalTo(self.view).offset(-40);
         make.height.mas_equalTo(50);
     }];
-    
+
     [self.bgview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
-    
+
     [self.switchMore mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.exchangeButton.mas_right).offset(0);
         make.centerY.equalTo(self.peopleButton.mas_centerY).offset(0);
@@ -214,13 +214,13 @@ typedef enum: NSUInteger {
  */
 -(void)manualGod{
     self.gameType = mGameType;
-    
+
     self.pingminLab.hidden = NO;
     self.shaziLab.hidden = NO;
     self.pingminTxt.hidden = NO;
     self.shaziTxt.hidden = NO;
     self.exchangeButton.hidden = NO;
-    
+
     if (self.allWord && self.allWord.count > 0) {
         self.randomButton.hidden = NO;
         [_randomButton setTitle:[NSString stringWithFormat:@"🎲🎲\n  随机选词   \n%ld个",(long)self.allWord.count] forState:UIControlStateNormal];
@@ -235,7 +235,7 @@ typedef enum: NSUInteger {
  */
 -(void)autoGod{
     self.gameType = autoGameType;
-    
+
     self.pingminLab.hidden = YES;
     self.shaziLab.hidden = YES;
     self.pingminTxt.hidden = YES;
@@ -279,7 +279,7 @@ typedef enum: NSUInteger {
 - (void)starGame:(id)sender
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"你怕不是个傻的吧" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"兑兑！奖得兑！" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"行！是我傻🤪" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     [alert addAction:action];
